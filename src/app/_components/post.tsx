@@ -1,17 +1,18 @@
+import type { Post } from "~/types/posts";
+import type { ProfileData } from "~/types/profiles";
+import UserTag from "./user-tag";
+
+import { Heart, MessageCircle } from "lucide-react";
+import Link from "next/link";
+import { cn } from "~/lib/utils";
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "~/components/ui/card";
-import type { Post } from "~/types/posts";
-import type { ProfileData } from "~/types/profiles";
-import UserTag from "./user-tag";
-import { Button } from "~/components/ui/button";
-import { Heart, MessageCircle } from "lucide-react";
-import Link from "next/link";
-import { cn } from "~/lib/utils";
+} from "./ui/card";
+import { Button } from "./ui/button";
 
 export default function Post({
   post,

@@ -1,7 +1,8 @@
 import { Bell, HomeIcon, MessageCircle, Settings, User } from "lucide-react";
 import Link from "next/link";
-import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
+
 import { api, HydrateClient } from "~/trpc/server";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export default async function Navbar() {
   const profile = await api.profile.getProfile({ id: 1 });

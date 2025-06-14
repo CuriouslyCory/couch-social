@@ -40,15 +40,16 @@ A simple webapp that has basic social capabilities
 - E2e tests
 - Ci/cd pipelines to automate testing
 - Inline docs, usually tsdocs for each function at minimum
+- Cleanup: I optimistically installed sonner for toasts, along with a few other components but didn't end up using them
 
 ## Features
 
 - React server component based architecture for first class support of new features like the react compiler
 - Navbar (Home and Profile are the working links)
-- Home page feed features recent posts from friends and self
-- Post detail page features post content, comments, and likes (accessed by clicking on the post comment count)
-- User profile page features user profile information, posts, and followers (accessed by clicking any avatar or "profile" link in the navbar)
-- Like button is highlighted when the user has liked the post
+- Home page - feed features recent posts from friends and self
+- Post detail page - features post content, comments, and likes (accessed by clicking on the post comment count)
+- User profile page - features user profile information, posts, and followers (accessed by clicking any avatar or "profile" link in the navbar)
+- Like button is highlighted when the "logged in" user has liked the post
 
 ## Challenges
 
@@ -57,3 +58,10 @@ A simple webapp that has basic social capabilities
 - Loading state deforms on load, need time to adjust CSS
 - So many things I want to add but must resist and limit scope!
 - Ran into an issue with the eslint config when I was running the final build test, but was able to fix it by switching to mjs and using the flatConfig from the next plugin
+
+## Main files for review:
+
+- ./src/app/\* - the frontend. If the app was a larger scale I would likely have \_components directorys for specific pages or features to keep the codebase more organized.
+- ./src/server/api/routers/\* - the main (serverless) backend code, provides mock data for the frontend
+- ./src/data/\* - mock data
+- ./src/types/\* - type definitions
