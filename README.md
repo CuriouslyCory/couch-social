@@ -44,3 +44,4 @@ A simple webapp that has basic social capabilities
   - Assumed something similar to the profile view of an app like x or bsky
 - Loading state deforms on load, not enough time to add proper fix
 - So much more I want to do, but not enough time~!
+- Ran into an issue with the eslint config when I was running the final build test, but was able to fix it by swithcing to mjs and using the flatConfig from the next plugin
